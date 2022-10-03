@@ -556,6 +556,10 @@ body{
 #check-menu{
     display: none;
 }
+
+#check-menu:checked ~ .list-menu{
+    display: none;
+}
  
 /*Nueva Barra de Navegacion*/
 
