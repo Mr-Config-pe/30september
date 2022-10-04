@@ -104,10 +104,8 @@ body{
 
 .year-exp{
 
-    color: rgb(231, 82, 82);
+    color: rgb(5, 163, 5);
     font-weight: bold;
-    
-    
 }
 
 .img-social{
@@ -414,6 +412,30 @@ body{
     padding: 50px 0px;
 }
 
+.habilidad-name{
+    padding-top: 10px;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.habilidad-0{
+    /*border: 2px dashed;
+    padding: 15px;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.4);*/
+    /*background-color: rgb(128, 128, 128, 0.1);*/
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.habilidades-icon{
+    opacity: 50%;
+}
+
+.habilidad-check{
+    font-size: 24px;
+    color: rgb(5, 163, 5);
+}
+
 .aside{
     display: grid;
     grid-template-areas: 
@@ -438,8 +460,7 @@ body{
 .portafolio-h3-1{
     text-align: start;
     padding-bottom: 20px;
-    font-size: 16px;
-    color: #7e62d0;
+    color: rgb(0, 0, 0);
     
 }
 
@@ -447,8 +468,7 @@ body{
     padding: 0px 16px;
     padding-top: 25px;
     padding-bottom: 5px;
-    font-size: 16px;
-    color: #7e62d0;
+    color: rgb(0, 0, 0);
     
 }
 
@@ -456,8 +476,7 @@ body{
     padding: 0px 16px;
     padding-top: 5px;
     padding-bottom: 5px;
-    font-size: 16px;
-    color: #7e62d0;
+    color: rgb(0, 0, 0);
 }
 
 .portafolio-1{
@@ -495,9 +514,8 @@ body{
 }
 
 .contact-img-social{
-    background-color: #F9F5F2;
-    padding: 20px 20px;
-    border-radius: 50%;
+   
+    width: 80px;
     
 }
 
@@ -522,8 +540,11 @@ body{
 .firma-footer{
     grid-area: footer3;
     text-align: center;
-    padding: 70px 0px;
-    color: #7e62d0;
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 10px 0px;
+    margin-top: 50px;
+    color: white;
+    
 }
 
 .footer{
@@ -820,7 +841,7 @@ body{
     gap: 12rem;
 }
 
-.base-icon-{
+/*.base-icon-{
     background-color: #F9F5F2;
     width: 150px;
     height: 150px;
@@ -828,15 +849,12 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-radius: 30%;
+    border-radius: 50%;
     
-}
+}*/
 
 .contact-img-social{
-    background-color: transparent;
-    padding: 0;
-    border-radius: 0;
-    width: 80px;
+    width: 100px;
 }
 
 .contacto-title{
