@@ -546,7 +546,9 @@ body{
 /*MENU DE NAVEGACION*/
 
 .header{
-    margin: 0px 80px;
+    /*margin: 0px 80px;*/
+    padding: 0px 80px;
+    background-color: black;
 }   
 
 .ico-menu{
@@ -571,7 +573,7 @@ body{
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     transition: all 1s;
-    color: #7e62d0; 
+    color: white; 
     border: 1px dashed;
   }
 
@@ -586,14 +588,14 @@ body{
   .list-newmenu:after {
     top: -1px;
     left: -1px;
-    border-top: 5px solid #7e62d0;
-    border-left: 5px solid #7e62d0;
+    border-top: 5px solid #FCDA68;
+    border-left: 5px solid #FCDA68;
   }
   .list-newmenu:before {
     bottom: -1px;
     right: -1px;
-    border-bottom: 5px solid #7e62d0;
-    border-right: 5px solid #7e62d0;
+    border-bottom: 5px solid #FCDA68;
+    border-right: 5px solid #FCDA68;
   }
   .list-newmenu:hover {
     border-top-right-radius: 0px;
@@ -668,7 +670,7 @@ body{
 .personal-pic-desktop{
     width: 480px;
     height: 480px;
-    border-radius: 0;  
+    border-radius: 50%;  
 }
 
 .personal-pic{
@@ -697,7 +699,7 @@ body{
     'section3 section5'
     'section4 section5'
     'section6 section5';
-    margin: 0px 120px;
+    margin: 50px 120px;
     padding-bottom: 70px;
 }
 
