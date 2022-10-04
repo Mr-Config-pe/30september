@@ -1,7 +1,7 @@
 //Inicia Codigo de Maquina de Escribir Codepen
 
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['Hola Mundo', 'Soy Immer', 'Estudiante de', 'Academlo'], 'text',['black','gray','#8E7BEF', 'rgb(231, 82, 82)']);
+consoleText(['Hola Mundo!', 'Soy Immer', 'Estudiante de', 'Academlo'], 'text',['black','rgb(231, 82, 82)','black', 'rgb(231, 82, 82)']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];

@@ -52,11 +52,11 @@ body{
   
   /*Fin Code Maquina de Escribir Codepen*/
   
-/*ESTILADO DE MENU DE NAVEGACION*/
+/*ESTILADO DE MENU DE NAVEGACION - HEADER*/
 
 .list-menu{
 
-    background-color: #8E7EBF;
+    background-color: black;
     color: black;
     width: 100%;
     top: 140px;
@@ -97,11 +97,13 @@ body{
     left: 0;
 }
 
-/*ESTILADO DEL HEADER*/
+/*ESTILADO DEL SECTION*/
 
 .year-exp{
 
-    color: #6608ca;
+    color: rgb(231, 82, 82);
+    font-weight: bold;
+    
     
 }
 
@@ -113,9 +115,9 @@ body{
 
 .div-linkedin{
 
-    background-color: #7e62d0;
-    width: 35px;
-    height: 35px;
+    background-color: black;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     display: flex;
     flex-direction: row;
@@ -127,9 +129,9 @@ body{
 
 .div-instagram{
 
-    background-color: #7e62d0;
-    width: 35px;
-    height: 35px;
+    background-color: black;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     display: flex;
     flex-direction: row;
@@ -140,9 +142,9 @@ body{
 
 .div-twitter{
 
-    background-color: #7e62d0;
-    width: 35px;
-    height: 35px;
+    background-color: black;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     display: flex;
     flex-direction: row;
@@ -153,7 +155,7 @@ body{
 
 .btn-contact{
 
-    background-color: #7e62d0;
+    background-color: black;
     color: white;
     display: flex;
     flex-direction: row;
@@ -230,7 +232,6 @@ body{
     grid-area: section1;
     background-color: white; /*Color de Fondo de la Maquina Codepen*/
     text-align: center;
-    font-size: 32px;
 }
 
 .description{
@@ -254,7 +255,7 @@ body{
     flex-direction: row;
     justify-content: center;
     gap: 1.5rem;
-    padding-top: 10px;
+    margin-bottom: 20px;
 }
 
 
@@ -547,7 +548,7 @@ body{
 
 .header{
     /*margin: 0px 80px;*/
-    padding: 0px 80px;
+    padding: 0px 120px;
     background-color: black;
 }   
 
@@ -664,7 +665,8 @@ body{
     flex-direction: row;
     justify-content: flex-start;
     gap: 3rem;
-    padding-top:30px;
+    margin: 0;
+    padding-top: 20px;
 }
 
 .personal-pic-desktop{
