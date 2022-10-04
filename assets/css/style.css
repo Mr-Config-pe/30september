@@ -27,6 +27,9 @@ body{
 
 /*Inicio Code Maquina de Escribir Codepen*/
 
+.hidden {
+    opacity:0;
+  }
 
 .console-container {
  
@@ -189,7 +192,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 35px;
+    margin-right: 35px;
 
 }
 
@@ -267,9 +270,10 @@ body{
 }
 
 .personal-pic-desktop{
-    width: 257px;
+    width: 243px;
     height: 243px;
-    border-radius: 50%;
+    border-radius: 20%;
+    background-color: rgb(252, 218, 104, 0.9);
 }
 
 .contact{
@@ -549,7 +553,8 @@ body{
 .header{
     /*margin: 0px 80px;*/
     padding: 0px 120px;
-    background-color: black;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.8);
 }   
 
 .ico-menu{
@@ -673,6 +678,7 @@ body{
     width: 480px;
     height: 480px;
     border-radius: 50%;  
+    background-color: rgb(252, 218, 104, 0.9);
 }
 
 .personal-pic{
@@ -800,7 +806,15 @@ body{
 }*/
 
 .footer{
-margin: 0px 120px;
+
+}
+
+.firma-footer{
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 10px 0px;
+    margin-top: 50px;
+    color: white;
+   
 }
 
 .contenedor-contacto{
@@ -833,7 +847,8 @@ margin: 0px 120px;
     grid-area: footer1;
     text-align: start;
     font-size: 24px;
-    padding: 40px 0px;
+    padding: 40px 120px;
+
 }
 
 .contact-subtitle{
