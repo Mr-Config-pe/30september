@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+
+.article {
+	align-items: center;
+	background-color: transparent;
+	display: flex;
+	font-family: 'Poppins', sans-serif;
+	justify-content: center;
+	min-height: 100vh;
+	/*-webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
+}
+
+.swiper-slide {
+	width: 400px;
+}
+
+.swiper-slide:nth-child(1) .slider-text {
+	background-color: rgb(0, 0, 0, 0.8);
+	/*background-image: url("https://picsum.photos/id/237/400/250");*/
+	
+}
+
+.swiper-slide:nth-child(2) .slider-text {
+	background-color: rgba(255, 89, 0, 0.7);
+}
+
+.swiper-slide:nth-child(3) .slider-text {
+	background-color: rgba(1, 124, 255, 0.8);
+}
+
+.swiper-slide:nth-child(4) .slider-text {
+	background-color: #ff9800;
+}
+
+.swiper-slide:nth-child(5) .slider-text {
+	background-color: #c33ada;
+}
+
+.card {
+	background-color: #ffffff;
+	height: 500px;
+	margin: 0 auto;
+	position: relative;
+	width: 400px;
+	border: 10px solid rgb(0, 0, 0, 0.05);
+	border-radius: 5px;
+}
+
+.card .content {
+	padding: 30px;
+	width: 400px;
+}
+
+.card .content a {
+	border: 2px solid #000000;
+	color: #262626;
+	display: inline-block;
+	font-weight: 600;
+	margin: 10px 0 0;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+.card .slider-text {
+	align-items: center;
+	background-color: #000000;
+	display: flex;
+	height: 200px;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+}
+
+.card .slider-text h3 {
+	color: #ffffff;
+	font-size: 3em;
+}
