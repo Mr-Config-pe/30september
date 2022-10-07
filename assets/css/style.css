@@ -1,9 +1,11 @@
-/* Inicio Fonts */
+/* HECHO BY MR-CONFIG - IMMER - ACADEMLO */
+
+/* ---------- INICIO FUENTES ---------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 /*@import url(https://fonts.googleapis.com/css?family=Khula:700);*/
 
-/* Fin Fonts */
+/* ---------- FINAL FUENTES ---------- */
 
 *{
     margin: 0;
@@ -15,24 +17,20 @@
 }
 
 html{
-
     height: 100%;
 }
 
 body{
-
-    min-height: 100%;
-
+   /* min-height: 100%;*/
 }
 
-/*Inicio Code Maquina de Escribir Codepen*/
+/* ---------- INICIO TITULO ANIMADO ---------- */
 
 .hidden {
     opacity:0;
   }
 
 .console-container {
- 
     /*font-family:Khula;*/
     font-size:32px;
     text-align:center;
@@ -41,21 +39,19 @@ body{
     display:block;
     position:absolute;*/
     color:rgb(82, 75, 75);
-    
   }
   
   .console-underscore {
-  
     display:inline-block;
     position:relative;
     top:-0.14em;
     left:10px;
-  
   }
   
-  /*Fin Code Maquina de Escribir Codepen*/
+/* ---------- FIN TITULO ANIMADO ---------- */
   
-/*ESTILADO DE MENU DE NAVEGACION - HEADER*/
+
+/* ---------- ESTILADO DE MENU DE NAVEGACION - HEADER ----------*/
 
 .list-menu{
     position: absolute; /*Saliendo de Flujo HTML*/
@@ -86,7 +82,6 @@ body{
 }
 
 .ico-menu{
-
     width: 24px;
 }
 
@@ -99,22 +94,18 @@ body{
 }
 
 
-/*ESTILADO DEL SECTION*/
+/* ---------- ESTILADO DEL SECTION ---------- */
 
 .year-exp{
-
     color: rgb(5, 163, 5);
     font-weight: bold;
 }
 
 .img-social{
-
     width: 24px;
-
 }
 
 .div-linkedin{
-
     background-color: black;
     width: 45px;
     height: 45px;
@@ -124,11 +115,9 @@ body{
     justify-content:center;
     align-items:center;
     padding-top: 3px;
-    
 }
 
 .div-instagram{
-
     background-color: black;
     width: 45px;
     height: 45px;
@@ -141,7 +130,6 @@ body{
 }
 
 .div-twitter{
-
     background-color: black;
     width: 45px;
     height: 45px;
@@ -154,7 +142,6 @@ body{
 }
 
 .btn-contact{
-
     background-color: black;
     color: white;
     display: flex;
@@ -166,31 +153,27 @@ body{
     gap: 1rem;
     border: 0;
     font-weight: bold;
-
 }
 
-/*ESTILADO DEL FOOTER*/
+/* ---------- ESTILADO DEL FOOTER ---------- */
 
 .contacto-cel{
     text-align: center;
 }
 
 .contacto-email{
-    text-align: center;
-    
+    text-align: center;  
 }
 
-/*GRID PARA MOVIL*/
+/* ---------- INICIO GRID AREA (PRINCIPAL) ---------- */
 
 .header{
-
     grid-area: header;
     background-color: white; /*Fondo de Header General, Barra Hamburguesa*/
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-right: 35px;
-
 }
 
 .section{
@@ -213,7 +196,7 @@ body{
     background-color: white; /*Fondo de Footer General*/
 }
 
-/*CONTENEDOR PRINCIPAL*/
+/* ---------- CONTENEDOR PRINCIPAL (GRID) ---------- */
 
 .grid-container{
     display: grid;
@@ -227,6 +210,8 @@ body{
     'footer'
     ;
 }
+
+/* ---------- INICIO GRID AREA SECTION ---------- */
 
 .title{
     grid-area: section1;
@@ -258,7 +243,6 @@ body{
     margin-bottom: 20px;
 }
 
-
 .personal-pic{
     grid-area: section5;
     display: flex;
@@ -281,6 +265,8 @@ body{
     justify-content: center;
 }
 
+/* ---------- CONTENEDOR SECTION (GRID) ---------- */
+
 .section{
     display: grid;
     grid-template-rows: 3.75rem 4.37rem 2.81rem 4.68rem 17.5rem 6.25rem;
@@ -293,11 +279,12 @@ body{
     'section6';
 }
 
+/* ---------- INICIO GRID AREA ASIDE ---------- */
+
 .title-exp{
     /*background-color: rgb(252, 186, 18); Fondo de trabajo*/
     grid-area: aside1;
     padding: 30px 15px;
-    
 }
 
 .description-exp{
@@ -315,7 +302,7 @@ body{
 }
 
 
-/*Experiencia Grid para Contenedor EXP-TITLE*/
+    /* ---------- INICIO GRID AREA EXP-TITLE ---------- */
 
 .year-exp1{
     grid-area: year1;
@@ -329,8 +316,7 @@ body{
     grid-area: year2;
     padding: 10px 0px;
     font-size: 0.87rem;
-    border-bottom: 2px solid gray;
-    
+    border-bottom: 2px solid gray;  
 }
 
 .year-exp3{
@@ -359,9 +345,7 @@ body{
 .empresa-exp1{
     grid-area: empresa1;
     padding-bottom: 10px;
-    border-bottom: 2px solid gray;
-    
-    
+    border-bottom: 2px solid gray; 
 }
 
 .empresa-exp2{
@@ -371,9 +355,10 @@ body{
 }
 
 .empresa-exp3{
-    grid-area: empresa3;
-    
+    grid-area: empresa3; 
 }
+
+/* ---------- CONTENEDOR EXP-TITLE (GRID) ---------- */
 
 .contenedor-exp-title{
     background-color: #FCDA68;
@@ -435,6 +420,8 @@ body{
     color: rgb(5, 163, 5);
 }
 
+/* ---------- CONTENEDOR ASIDE (GRID) ---------- */
+
 .aside{
     display: grid;
     grid-template-areas: 
@@ -445,6 +432,8 @@ body{
     'aside5'
     'aside6';
 }
+
+/* ---------- INICIO GRID AREA ARTICLE ---------- */
 
 .portafolio-title{
     /*background-color: rgb(159, 151, 151); Fondo Titulo de Portafolio*/
@@ -474,8 +463,7 @@ body{
     padding: 0px 16px;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: rgb(0, 0, 0);
-    
+    color: rgb(0, 0, 0); 
 }
 
 .portafolio-h3-3{
@@ -504,6 +492,7 @@ body{
     display: none;
 }
 
+/* ---------- CONTENEDOR ARTICLE (GRID) ---------- */
 
 .article{
     display: grid;
@@ -517,6 +506,8 @@ body{
     'article4';
 }
 
+/* ---------- INICIO GRID AREA FOORTER ---------- */
+
 .contacto-title{
     grid-area: footer1;
     text-align: center;
@@ -525,9 +516,7 @@ body{
 }
 
 .contact-img-social{
-   
     width: 80px;
-    
 }
 
 .contact-subtitle{
@@ -554,9 +543,10 @@ body{
     background-color: rgb(0, 0, 0, 0.8);
     padding: 10px 0px;
     margin-top: 50px;
-    color: white;
-    
+    color: white;  
 }
+
+/* ---------- CONTENEDOR FOOTER (GRID) ---------- */
 
 .footer{
     display: grid;
@@ -566,21 +556,19 @@ body{
     'footer3';
 }
 
-/*GRID PARA DESKTOP*/
+/* /-/-/-/-/-/-/-/-/-/-/ GRID PARA DESKTOP /-/-/-/-/-/-/-/-/-/-/ */
 
 @media (min-width: 675px){
 
-/*CODE MAQUINA DE ESCRIBIR CODEPEN*/
+/* ---------- TITULO ANIMADO ---------- */
 
 .console-container {
- 
     /*font-family:Khula;*/
     font-size:62px;
-    
   }
 
 
-/*MENU DE NAVEGACION*/
+/* ---------- MENU HAMBURGUER AND NAV ---------- */
 
 .header{
     /*margin: 0px 80px;*/
@@ -601,7 +589,7 @@ body{
     display: none;
 }
  
-/*Nueva Barra de Navegacion*/
+/* ---------- NEW BARRA DE NAVEGACION ---------- */
 
 .list-newmenu {
     cursor: pointer;
@@ -623,22 +611,26 @@ body{
     border: 0px solid #fff;
     transition: all 1s;
   }
+
   .list-newmenu:after {
     top: -1px;
     left: -1px;
     border-top: 5px solid #FCDA68;
     border-left: 5px solid #FCDA68;
   }
+
   .list-newmenu:before {
     bottom: -1px;
     right: -1px;
     border-bottom: 5px solid #FCDA68;
     border-right: 5px solid #FCDA68;
   }
+
   .list-newmenu:hover {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
   }
+
   .list-newmenu:hover:before, .list-newmenu:hover:after {
     width: 100%;
     height: 100%;
@@ -651,12 +643,10 @@ body{
     flex-direction: row;
     gap: 2rem;
     align-items: center;
-    
-    
   }
 
 
-/*CONTAINER PRINCIPAL*/
+/* ---------- CONTAINER PRINCIPAL ---------- */
 
 .grid-container{
     display: grid;
@@ -671,18 +661,13 @@ body{
     ;
 }
 
-  
-/*--------------------*/
-
-/*ZONA SECTION*/
+/* ---------- ZONA SECTION ---------- */
 
 .title{
-       
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
-        
+    align-items: center;       
 }
 
 .description{
@@ -743,7 +728,7 @@ body{
     padding-bottom: 30px;
 }
 
-/*ZONA ASIDE*/
+/* ---------- ZONA ASIDE ---------- */
 
 .title-exp{
     font-size: 35px;
@@ -790,7 +775,7 @@ body{
     'aside6 aside6';
 }
 
-/*ZONA ARTICLE*/
+/* ---------- ZONA ARTICLE ---------- */
 
 .article{
     /*margin: 0px 120px;*/
@@ -802,8 +787,7 @@ body{
     gap: 1rem;
     grid-template-areas:
     'article1 article1 article1'
-    'article5 article5 article5'
-        ;
+    'article5 article5 article5';
 }
 
 .porta-slider{
@@ -813,13 +797,11 @@ body{
     display: block;
 }
 
-.portafolio-title{
-      
+.portafolio-title{  
     align-self: start;
     padding: 13px 0px;
     padding-top: 50px;
-    font-size: 24px;
-        
+    font-size: 24px;    
 }
 
 .portafolio-1, .portafolio-2, .portafolio-3{
@@ -827,14 +809,12 @@ body{
 }
   
 .portafolio-h3-1, .portafolio-h3-2, .portafolio-h3-3{
-    
     padding: 0;
     padding-bottom: 10px;
-    
 }
    
 
-/*ZONA FOOTER*/
+/* ---------- ZONA FOOTER ----------*/
 
 /*footer>.contacto-title{
     padding: 25px 0px;
@@ -846,7 +826,6 @@ body{
     padding: 10px 0px;
     margin-top: 50px;
     color: white;
-   
 }
 
 .contenedor-contacto{
@@ -885,8 +864,7 @@ padding-top: 15px;
 padding-bottom: 30px;
 }
 
-
-       
+/* ---------- FIN ----------*/  
 }
 
 
