@@ -1,4 +1,4 @@
-//Inicia Codigo de Maquina de Escribir Codepen
+//Inicia Codigo de Maquina de Escribir 
 
 // function([string1, string2],target id,[color1,color2])    
 consoleText(['Hola Mundo!', 'Soy Immer', 'Estudiante de', 'Academlo'], 'text',['black','rgb(231, 82, 82)','black', 'rgb(231, 82, 82)']);
@@ -52,4 +52,4 @@ function consoleText(words, id, colors) {
   }, 400)
 }
 
-//Termina Codigo de Maquina de Escribir Codepen
+//Termina Codigo de Maquina de Escribir
