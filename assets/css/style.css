@@ -567,6 +567,7 @@
 /* ---------- INICIO CODE VIEW PAGES ---------- */
 
 .container-pages{
+    max-width: 1500px;
     display: flex;
     flex-direction: row;
     justify-content: center;
