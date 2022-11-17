@@ -292,7 +292,7 @@
     /*background-color: #8E7EBF; Fondo de Trabajo*/
     grid-area: aside2;
     padding: 0px 15px;
-    margin-top: 50px;
+    padding-bottom: 50px;
     
 }
 
@@ -842,6 +842,7 @@
 .description-exp{
     padding: 0;
     font-size: 20px;
+    margin-top: 50px;
 }
 
 .habilidades-title{
