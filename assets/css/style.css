@@ -16,13 +16,9 @@
     list-style: none;
 }
 
-html{
+/*html{
     height: 100%;
-}
-
-body{
-   /* min-height: 100%;*/
-}
+}*/
 
 /* ---------- INICIO TITULO ANIMADO ---------- */
 
@@ -168,22 +164,26 @@ body{
 /* ---------- INICIO GRID AREA (PRINCIPAL) ---------- */
 
 .header{
+    
     grid-area: header;
     background-color: white; /*Fondo de Header General, Barra Hamburguesa*/
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-right: 35px;
+    
 }
 
 .section{
     grid-area: section;
     background-color: white; /*Fondo de de la Seccion General*/
+   
 }
 
 .aside{
     grid-area: aside;
     background-color: #FCDA68; /*Fondo de Aside General*/
+    
 }
 
 .article{
@@ -199,9 +199,11 @@ body{
 /* ---------- CONTENEDOR PRINCIPAL (GRID) ---------- */
 
 .grid-container{
+    
     display: grid;
+    justify-content: center;
     /*gap: 10px;*/
-    grid-template-rows: 80px auto auto; /*Separacion entre contenedores Principales*/
+    grid-template-rows: 80px auto; /*Separacion entre contenedores Principales*/
     grid-template-areas: 
     'header'
     'section'
@@ -240,7 +242,6 @@ body{
     flex-direction: row;
     justify-content: center;
     gap: 1.5rem;
-    margin-bottom: 20px;
 }
 
 .personal-pic{
@@ -437,12 +438,16 @@ body{
 
 .portafolio-title{
     /*background-color: rgb(159, 151, 151); Fondo Titulo de Portafolio*/
-    grid-area: article1;
-    align-self: start;
-    padding: 13px 15px;
+    grid-area: portafolio;
+    /*align-self: start;*/
     padding-top: 50px;
+    padding-bottom: 3rem;
     font-size: 24px;
     
+}
+
+.container-pages{
+    grid-area: container-pages;
 }
 
 .porta-img{
@@ -473,6 +478,7 @@ body{
     color: rgb(0, 0, 0);
 }
 
+/*
 .portafolio-1{
    grid-area: article2;
    
@@ -486,7 +492,7 @@ body{
 .portafolio-3{
     grid-area: article4;
     
-}
+}*/
 
 .porta-slider{
     display: none;
@@ -495,15 +501,16 @@ body{
 /* ---------- CONTENEDOR ARTICLE (GRID) ---------- */
 
 .article{
+    
     display: grid;
     display: flex;
     flex-direction: column;
-    /*align-items: center; Centra los items manteniendolo mas pequeño*/
+    margin-bottom: 2.5rem;
+    align-items: center; /*Centra los items manteniendolo mas pequeño*/
     grid-template-areas:
-    'article1'
-    'article2'
-    'article3'
-    'article4';
+    'portafolio'
+    'container-pages'
+   ;
 }
 
 /* ---------- INICIO GRID AREA FOORTER ---------- */
@@ -556,9 +563,75 @@ body{
     'footer3';
 }
 
+/* ---------- INICIO CODE VIEW PAGES ---------- */
+
+.container-pages{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.bar-chrome{
+    position: relative;
+    width: 350px;
+    margin-bottom: -4px;
+    z-index: 2;
+}
+
+
+.image{
+    
+    max-width: 350px;
+    max-height: 445px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.img1{
+    width: 100%;
+    max-height: auto;
+    transition: 2s;
+    filter:brightness(90%);
+}
+
+.img1:hover{
+    transform: translateY(-30%);
+    filter: none;
+}
+
+.img2{
+    width: 100%;
+    max-height: auto;
+    transition: 1s;
+    filter:brightness(90%);
+}
+
+.img2:hover{
+    transform: translateY(-5%);
+    filter: none;
+}
+
+.img3{
+    width: 100%;
+    max-width: auto;
+    transition: 3s;
+    filter:brightness(90%);
+}
+
+.img3:hover{
+    transform: translateY(-43.9%);
+    filter: none;
+}
+
+/* ---------- FIN CODE VIEW PAGES ---------- */
+
+
 /* /-/-/-/-/-/-/-/-/-/-/ GRID PARA DESKTOP /-/-/-/-/-/-/-/-/-/-/ */
 
-@media (min-width: 675px){
+@media (min-width: 800px){
 
 /* ---------- TITULO ANIMADO ---------- */
 
@@ -571,8 +644,7 @@ body{
 /* ---------- MENU HAMBURGUER AND NAV ---------- */
 
 .header{
-    /*margin: 0px 80px;*/
-    padding: 0px 120px;
+    padding: 0 50px;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.8);
 }   
@@ -651,7 +723,7 @@ body{
 .grid-container{
     display: grid;
     /*gap: 10px;*/
-    grid-template-rows: 140px auto auto;
+    grid-template-rows: 140px auto;
     grid-template-areas: 
     'header'
     'section'
@@ -688,12 +760,12 @@ body{
     justify-content: flex-start;
     gap: 3rem;
     margin: 0;
-    padding-top: 20px;
+    padding-top: -20px;
 }
 
 .personal-pic-desktop{
-    width: 480px;
-    height: 480px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;  
     background-color: rgb(252, 218, 104, 0.9);
 }
@@ -724,7 +796,7 @@ body{
     'section3 section5'
     'section4 section5'
     'section6 section5';
-    margin: 50px 120px;
+    margin: 50px 50px;
     padding-bottom: 30px;
 }
 
@@ -764,8 +836,11 @@ body{
 }
 
 .aside{
-    padding: 0px 120px;
+    
+    padding: 0px 50px;
     display: grid;
+    
+    
     grid-template-columns: 50%;
     grid-template-areas: 
     'aside1 aside3'
@@ -779,15 +854,16 @@ body{
 
 .article{
     /*margin: 0px 120px;*/
-    margin: 0px 120px;
+    margin-bottom: 35px;
     display: grid;
     flex-direction: row;
-    justify-content: space-between;
-    top: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*top: 0;*/
     gap: 1rem;
-    grid-template-areas:
+    /*grid-template-areas:
     'article1 article1 article1'
-    'article5 article5 article5';
+    'article5 article5 article5';*/
 }
 
 .porta-slider{
@@ -798,9 +874,8 @@ body{
 }
 
 .portafolio-title{  
-    align-self: start;
-    padding: 13px 0px;
-    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 3rem;
     font-size: 24px;    
 }
 
@@ -853,9 +928,8 @@ body{
 
 .contacto-title{
     grid-area: footer1;
-    text-align: start;
     font-size: 24px;
-    padding: 40px 120px;
+    padding: 40px 50px;
 
 }
 
@@ -863,6 +937,8 @@ body{
 padding-top: 15px;
 padding-bottom: 30px;
 }
+
+
 
 /* ---------- FIN ----------*/  
 }
