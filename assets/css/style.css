@@ -99,6 +99,7 @@
 
 .img-social{
     width: 24px;
+    
 }
 
 .div-linkedin{
@@ -113,7 +114,7 @@
     padding-top: 3px;
 }
 
-.div-instagram{
+.div-github{
     background-color: black;
     width: 45px;
     height: 45px;
@@ -124,6 +125,7 @@
     align-items: center;
     padding-top: 3px;
 }
+
 
 .div-twitter{
     background-color: black;
