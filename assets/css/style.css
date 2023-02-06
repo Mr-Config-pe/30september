@@ -673,7 +673,7 @@
 
 /* /-/-/-/-/-/-/-/-/-/-/ GRID PARA DESKTOP /-/-/-/-/-/-/-/-/-/-/ */
 
-@media (min-width: 800px){
+@media (min-width: 860px){
 
 /* ---------- TITULO ANIMADO ---------- */
 
@@ -794,6 +794,7 @@
 .experiencie{
     text-align: start;
     font-size: 24px;
+    padding-top: 15px;
 }
 
 .personal-pic-desktop{
@@ -985,11 +986,17 @@ padding-bottom: 30px;
 
 
 
-/* ---------- FIN ----------*/  
+
+}
+
+@media (min-width: 1090px){
+
+.experiencie{
+  padding-top: 0px;
+}
 }
 
 
-
-
+/* ---------- FIN ----------*/  
 
 
