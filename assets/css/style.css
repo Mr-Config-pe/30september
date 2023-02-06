@@ -139,6 +139,7 @@
     padding-top: 3px;
 }
 
+/*
 .btn-contact{
     background-color: black;
     color: white;
@@ -152,6 +153,8 @@
     border: 0;
     font-weight: bold;
 }
+
+*/
 
 /* ---------- ESTILADO DEL FOOTER ---------- */
 
@@ -239,11 +242,6 @@
 
 .social-media{
     grid-area: section4;
-    background-color: white; /*Color Fondo Social Media - Section*/
-    display: flex; 
-    flex-direction: row;
-    justify-content: center;
-    gap: 1.5rem;
 }
 
 .personal-pic{
@@ -277,9 +275,9 @@
     'section1'
     'section2' 
     'section3' 
-    'section4' 
     'section5' 
-    'section6';
+    'section4' 
+    '.';
 }
 
 /* ---------- INICIO GRID AREA ASIDE ---------- */
@@ -295,6 +293,7 @@
     grid-area: aside2;
     padding: 0px 15px;
     padding-bottom: 50px;
+    line-height: 25px;
     
 }
 
@@ -303,6 +302,7 @@
     grid-area: aside3;
     padding: 0px 15px;
     padding-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 
@@ -332,12 +332,14 @@
 .profesion-exp1{
     grid-area: profesion1;
     font-weight: bold;
+    padding-bottom: 20px;
 }
 
 .profesion-exp2{
     grid-area: profesion2;
     padding-top: 10px;
     font-weight: bold;
+    padding-bottom: 20px;
 }
 
 .profesion-exp3{
@@ -416,7 +418,7 @@
 }
 
 .habilidades-icon{
-    opacity: 50%;
+    opacity: none;
 }
 
 .habilidad-check{
@@ -654,6 +656,18 @@
     filter: none;
 }
 
+.img6{
+    width: 100%;
+    max-width: auto;
+    transition: 1s;
+    filter:brightness(90%);
+}
+
+.img6:hover{
+    transform: translateY(-12%);
+    filter: none;
+}
+
 /* ---------- FIN CODE VIEW PAGES ---------- */
 
 
@@ -782,15 +796,6 @@
     font-size: 24px;
 }
 
-.social-media{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 3rem;
-    margin: 0;
-    padding-top: -20px;
-}
-
 .personal-pic-desktop{
     width: 400px;
     height: 400px;
@@ -830,6 +835,15 @@
 
 /* ---------- ZONA ASIDE ---------- */
 
+.profesion-exp1{
+    padding-bottom: 0px;
+}
+
+.profesion-exp2 {
+    padding-bottom: 0px;
+}
+
+
 .title-exp{
     font-size: 35px;
     padding: 0;
@@ -839,6 +853,7 @@
 .experiencie-title{    
     padding-top: 30px;
     font-size: 20px;
+    
 }
 
 .description-exp{

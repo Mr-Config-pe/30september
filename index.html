@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./assets/img/iconos/icon.ico" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Portafolio Mr.Config</title>
+    <link rel="stylesheet" href="./assets/css/social-media.css" />
+    <script src="https://kit.fontawesome.com/f6d4d6c931.js" crossorigin="anonymous"></script> <!--Fontawesome URL-->
+    <title>Portafolio | By Immer</title>
   </head>
   <body class="grid-container">
     <header id="header-web" class="header">
@@ -48,32 +50,19 @@
         <span class="year-exp">1 año</span> de experiencia
       </p>
       <div class="social-media">
-        <div class="div-linkedin">
-          <a
-            href="https://www.linkedin.com/in/mr-config/"
-            target="_blank"
-            class="linkedin"
-            ><img
-              src="./assets/img/iconos/linkedin.svg"
-              alt=""
-              class="img-social"
-          /></a>
-        </div>
-        <div class="div-github">
-          <a href="https://github.com/Mr-Config-pe" target="_blank" class="github"
-            ><img
-              src="./assets/img/iconos/github.svg"
-              alt=""
-              class="img-social"
-          /></a>
-        </div>
-        <div class="div-twitter">
-          <a href="#" target="_blank" class="twitter"
-            ><img
-              src="./assets/img/iconos/twitter.svg"
-              alt=""
-              class="img-social"
-          /></a>
+        <div class="wrapper">
+          <div class="icon linkedin">
+            <div class="tooltip">LinkedIn</div>
+            <a class="ancorsm" href="https://www.linkedin.com/in/mr-config" target={blank}><span><i class="fa-brands fa-linkedin fa-3x"></i></span></a>
+          </div>
+          <div class="icon github">
+            <div class="tooltip">GitHub</div>
+            <a class="ancorsm" href="https://github.com/Mr-Config-pe" target={blank}><span><i class="fa-brands fa-github fa-3x"></i></span></a>
+          </div>
+          <div class="icon curriculum">
+            <div class="tooltip">Curriculum</div>
+            <a class="ancorsm" href="https://bit.ly/cv-immer" target={blank}><span><i class="fa-solid fa-file"></i></span></a>
+          </div>
         </div>
       </div>
       <div class="personal-pic">
@@ -84,28 +73,20 @@
         />
         <!--<img src="./assets/img/photo mobile.png" alt="" class="personal-pic-mobile">-->
       </div>
-      <div class="contact">
-        <a
-          href="mailto:mr.configperu@gmail.com"
-          target="_blank"
-          class="btn-contact"
-        >
-          <img
-            src="./assets/img/iconos/gmail-icon.png"
-            alt=""
-            class="img-social"
-          />Contáctame
-        </a>
-      </div>
+    
     </section>
     <aside id="aside-web" class="aside">
       <h2 class="title-exp">Experiencia y <br />habilidades</h2>
       <p class="description-exp">
-        La Sinceridad ante todo, en este mundo<br />
-        de la programacion soy nuevo, pero avanzando rápido. <br />
-        Soy Junior con Alma de Senior :D <br />
+        Soy un Front-end Developer Junior, y he obtenido <br>
+        experiencia en la realización de proyectos.
+        <br/> <br/>
+        Esta página entera fue creada por mí usando <br>
+        solo HTML5, CSS3 y un poco de JavaScript. <br>
+        <br>
+        Puedes ver otros proyectos más abajo.
       </p>
-      <h3 class="experiencie-title">Experiencia</h3>
+      <h3 class="experiencie-title">Experiencia antes de ser Front-end Developer</h3>
       <div class="contenedor-exp-title">
         <a class="year-exp1">2006-2010</a>
         <a class="profesion-exp1"
@@ -124,17 +105,23 @@
       <h3 class="habilidades-title">Habilidades</h3>
       <div class="contenedor-habilidades-img">
         <div class="habilidad-0 habilidad-1">
-          <img src="./assets/img/iconos/js-icon.png" alt="" /><br />
+          <img 
+            class="habilidades-icon"
+            src="./assets/img/iconos/js-icon.png" alt="" /><br />
           <a class="habilidad-check"> ✔</a>
           <p class="habilidad-name">JAVASCRIPT</p>
         </div>
         <div class="habilidad-0 habilidad-2">
-          <img src="./assets/img/iconos/html-5-icon.png" alt="" /><br />
+          <img 
+            class="habilidades-icon" 
+            src="./assets/img/iconos/html-5-icon.png" alt="" /><br />
           <a class="habilidad-check">✔</a>
           <p class="habilidad-name">HTML</p>
         </div>
         <div class="habilidad-0 habilidad-3">
-          <img src="./assets/img/iconos/css-icon.png" alt="" /><br />
+          <img 
+            class="habilidades-icon"
+            src="./assets/img/iconos/css-icon.png" alt="" /><br />
           <a class="habilidad-check">✔</a>
           <p class="habilidad-name">CSS</p>
         </div>
@@ -143,59 +130,38 @@
             class="habilidades-icon"
             src="./assets/img/iconos/react-icon.png"
             alt=""
-          />
+          /><br/>
+          <a class="habilidad-check">✔</a>
           <p class="habilidad-name">REACT</p>
         </div>
         <div class="habilidad-0 habilidad-5">
           <img
             class="habilidades-icon"
-            src="./assets/img/iconos/nodejs-icon.png"
+            src="./assets/img/iconos/git-icon.png"
             alt=""
-          />
-          <p class="habilidad-name">NODE JS</p>
+          /><br/>
+          <a class="habilidad-check">✔</a>
+          <p class="habilidad-name">GIT</p>
         </div>
       </div>
     </aside>
     <article id="article-web" class="article">
       <!---<iframe class="porta-slider" src="./assets/slider/slider1/portafolio-slider.html" frameborder="0"></iframe>-->
-      <h3 class="portafolio-title">Portafolio</h3>
+      <h3 class="portafolio-title">PROYECTOS</h3>
       <div class="container-pages">
-        <figure class="image">
+        <figure class="image pokedex">
           <img
             class="bar-chrome"
             src="./assets/img/imagenes/header-google.avif"
           />
-          <a href="https://teaminaction.netlify.app/" target="_blank"
+          <a href="https://pokedex-by-immer.netlify.app/" target="_blank"
             ><img
-              class="img1"
-              src="./assets/img/imagenes/bootcamp-academlo-store.avif"
+              class="img6"
+              src="./assets/img/imagenes/pokedex-react.avif"
           /></a>
         </figure>
-        <figure class="image">
-          <img
-            class="bar-chrome"
-            src="./assets/img/imagenes/header-google.avif"
-          />
-          <a href="https://project1-quotes-react.netlify.app/" target="_blank"
-            ><img
-              class="img2"
-              src="./assets/img/imagenes/quotes-react-bootcamp.avif"
-          /></a>
-        </figure>
-        <figure class="image">
-          <img
-            class="bar-chrome"
-            src="./assets/img/imagenes/header-google.avif"
-          />
-          <a
-            href="https://project2-weather-react.netlify.app/"
-            target="_blank"
-            ><img
-              class="img3"
-              src="./assets/img/imagenes/react-weather-bootcamp.avif"
-          /></a>
-        </figure>
-        <figure class="image">
+
+        <figure class="image rickandmorty">
           <img
             class="bar-chrome"
             src="./assets/img/imagenes/header-google.avif"
@@ -208,7 +174,34 @@
               src="./assets/img/imagenes/rickandmorty-react-bootcamp.avif"
           /></a>
         </figure>
-        <figure class="image">
+
+        <figure class="image quotesreact">
+          <img
+            class="bar-chrome"
+            src="./assets/img/imagenes/header-google.avif"
+          />
+          <a href="https://project1-quotes-react.netlify.app/" target="_blank"
+            ><img
+              class="img2"
+              src="./assets/img/imagenes/quotes-react-bootcamp.avif"
+          /></a>
+        </figure>
+
+        <figure class="image weatherreact">
+          <img
+            class="bar-chrome"
+            src="./assets/img/imagenes/header-google.avif"
+          />
+          <a
+            href="https://project2-weather-react.netlify.app/"
+            target="_blank"
+            ><img
+              class="img3"
+              src="./assets/img/imagenes/react-weather-bootcamp.avif"
+          /></a>
+        </figure>
+        
+        <figure class="image crudusers">
           <img
             class="bar-chrome"
             src="./assets/img/imagenes/header-google.avif"
@@ -219,10 +212,23 @@
               src="./assets/img/imagenes/react-crud-users-interface.avif"
           /></a>
         </figure>
+
+        <figure class="image ecommercehtml">
+          <img
+            class="bar-chrome"
+            src="./assets/img/imagenes/header-google.avif"
+          />
+          <a href="https://teaminaction.netlify.app/" target="_blank"
+            ><img
+              class="img1"
+              src="./assets/img/imagenes/bootcamp-academlo-store.avif"
+          /></a>
+        </figure>
+        
       </div>
     </article>
     <footer id="footer-web" class="footer">
-      <h3 class="contacto-title">Contacto</h3>
+      <h3 class="contacto-title">CONTACTO</h3>
       <div class="contenedor-contacto">
         <div class="contacto-cel">
           <div class="base-icon-">
