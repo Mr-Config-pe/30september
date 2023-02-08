@@ -1,4 +1,12 @@
+.container-switch {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
 .switch {
+    
     background: var(--back-yellow);
     border-radius: 1rem;
     border: none;
@@ -7,10 +15,10 @@
     display: flex;
     outline: none;
     align-items: center;
-    justify-content: space-between;
-    margin: auto;
+    
     
 }
+
 
 .icon-sun, .icon-moon {
     width: 30px;
@@ -27,7 +35,7 @@
     width: 1.8rem;
     height: 1.8rem;
     position: absolute;
-    top: 0;
+    top: -1;
     left: 0;
     right: unset;
     border-radius: 50%;
@@ -45,3 +53,16 @@
     right: 0;
 }
 
+
+@media (min-width: 860px){ /* Cambio de codigo para otras pantallas */
+
+    .container-switch {
+
+        width: 0;
+        display: block;
+        justify-content: none;
+
+    }
+
+ 
+}

@@ -22,8 +22,10 @@
     --head-footer: hsl(0, 0%, 0%, 0.8); /* hsl(0, 0%, 0%, 0.8);*/
     --back-white: hsl(60, 100%, 97%); /* hsl(60, 100%, 97%); */
     --back-yellow: hsl(46, 96%, 69%); /* hsl(46, 96%, 69%); */
+    ---back-switch: hsl(46, 96%, 69%); /* hsl(46, 96%, 69%); */
     --text-headfooter: hsl(60, 100%, 97%); /* hsl(60, 100%, 97%); */
     --text-body: hsl(0, 0%, 0%); /* hsl(0, 0%, 0%); */
+    --hambur-color: hsl(0, 0%, 0%); /* hsl(0, 0%, 0%); */
     /*---------- Colores ----------*/
     
 }
@@ -34,9 +36,11 @@ body.dark {
     /*---------- Colores ----------*/
     --head-footer: hsl(183, 51%, 61%); /* hsl(0, 0%, 0%, 0.8);*/
     --back-white: hsl(249, 19%, 14%); /* hsl(60, 100%, 97%); */
-    --back-yellow: hsl(255, 8%, 10%);; /* hsl(46, 96%, 69%); */
+    --back-yellow: hsl(255, 8%, 10%); /* hsl(46, 96%, 69%); */
+    --back-switch: hsl(183, 51%, 61%); /* hsl(183, 51%, 61%); */
     --text-headfooter: hsl(0, 0%, 100%); /* hsl(60, 100%, 97%); */
     --text-body: hsl(0, 0%, 75%); /* hsl(0, 0%, 0%); */
+    --hambur-color: hsl(183, 51%, 61%); /* hsl(183, 51%, 61%); */
     /*---------- Colores ----------*/
     
 }
@@ -107,8 +111,8 @@ body{
     color: white;
 }
 
-.ico-menu{
-    width: 24px;
+.fa-bars{
+    color: var(--hambur-color);
 }
 
 #check-menu{
@@ -204,10 +208,9 @@ body{
     /*background-color: white; Fondo de Header General, Barra Hamburguesa*/
     display: flex;
     margin: auto 15px;
-    justify-content: space-between;
+    /*justify-content: space-between;
     justify-items: center;
-    align-items: center;
-
+    align-items: center;*/
 }
 
 .section{
@@ -745,7 +748,7 @@ body{
     align-items: center;
 }   
 
-.ico-menu{
+.menu-hamburger{
     display: none;
 }
      
