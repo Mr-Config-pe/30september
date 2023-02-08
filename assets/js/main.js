@@ -1,7 +1,7 @@
 //Inicia Codigo de Maquina de Escribir 
 
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['Hola Mundo!', 'Soy Immer', ' Un Desarrollador', 'Front-End'], 'text',['black','rgb(231, 82, 82)','black', 'rgb(231, 82, 82)']);
+consoleText(['Hola Mundo!', 'Soy Immer', ' Un Desarrollador', 'Front-End'], 'text',['rgb(231, 82, 82)','rgb(231, 82, 82)','rgb(231, 82, 82)', '#68C9CE']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -53,3 +53,13 @@ function consoleText(words, id, colors) {
 }
 
 //Termina Codigo de Maquina de Escribir
+
+/* ---------- Inicio Code Boton Switch Modo Oscuro ---------- */
+
+const switchButton = document.getElementById('switch');
+switchButton.addEventListener('click', ()=>{
+  document.body.classList.toggle('dark');
+  switchButton.classList.toggle('active')
+})
+
+/* ---------- Fin Code Boton Switch Modo Oscuro ---------- */

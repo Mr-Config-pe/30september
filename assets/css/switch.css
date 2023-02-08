@@ -1,0 +1,47 @@
+.switch {
+    background: var(--back-yellow);
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    
+}
+
+.icon-sun, .icon-moon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    color: #fff;
+    background: none;
+}
+
+.switch::after {
+    display: block;
+    background: #fffbf5;
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 50%;
+    transition: all .5s ease;
+    box-shadow: 0 0 1.5px 1.5px rgba(0, 0, 0, .5);
+    content: "";
+}
+
+.switch.active {
+    background: #3494b1;
+}
+
+.switch.active::after{
+    left: unset;
+    right: 0;
+}
+
