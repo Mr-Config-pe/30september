@@ -22,7 +22,8 @@
     --head-footer: hsl(0, 0%, 0%, 0.8); /* hsl(0, 0%, 0%, 0.8);*/
     --back-white: hsl(60, 100%, 97%); /* hsl(60, 100%, 97%); */
     --back-yellow: hsl(46, 96%, 69%); /* hsl(46, 96%, 69%); */
-    ---back-switch: hsl(46, 96%, 69%); /* hsl(46, 96%, 69%); */
+    --back-switch: hsl(46, 96%, 69%); /* hsl(46, 96%, 69%); */
+    --back-picProfile: hsl(46, 96%, 69%); /* hsl(46, 96%, 69%); */
     --text-headfooter: hsl(60, 100%, 97%); /* hsl(60, 100%, 97%); */
     --text-body: hsl(0, 0%, 0%); /* hsl(0, 0%, 0%); */
     --hambur-color: hsl(0, 0%, 0%); /* hsl(0, 0%, 0%); */
@@ -33,11 +34,13 @@
 
 body.dark {
     
+    
     /*---------- Colores ----------*/
     --head-footer: hsl(183, 51%, 61%); /* hsl(0, 0%, 0%, 0.8);*/
     --back-white: hsl(249, 19%, 14%); /* hsl(60, 100%, 97%); */
     --back-yellow: hsl(255, 8%, 10%); /* hsl(46, 96%, 69%); */
     --back-switch: hsl(183, 51%, 61%); /* hsl(183, 51%, 61%); */
+    --back-picProfile: hsl(183, 51%, 61%); /* hsl(46, 96%, 69%); */
     --text-headfooter: hsl(0, 0%, 100%); /* hsl(60, 100%, 97%); */
     --text-body: hsl(0, 0%, 75%); /* hsl(0, 0%, 0%); */
     --hambur-color: hsl(183, 51%, 61%); /* hsl(183, 51%, 61%); */
@@ -47,6 +50,7 @@ body.dark {
 
 body{
     background-color: var(--back-white);
+    transition: 1s ease-in-out;
 }
 
 /*html{
@@ -222,7 +226,7 @@ body{
 .aside{
     grid-area: aside;
     background-color: var(--back-yellow); /*Fondo de Aside General*/
-    
+    transition: 1s ease-in-out;
 }
 
 .article{
@@ -266,6 +270,7 @@ body{
     text-align: center;
     padding: 0px 15px;
     color: var(--text-body);
+    transition: 1s ease-in-out;
     /*padding: 0px 10px;*/
 }
 
@@ -274,6 +279,7 @@ body{
     /*background-color: white; Color Fondo Experiencie - Section*/
     text-align: center;
     color: var(--text-body);
+    transition: 1s ease-in-out;
 }
 
 .social-media{
@@ -291,7 +297,8 @@ body{
     width: 243px;
     height: 243px;
     border-radius: 20%;
-    background-color: var(--back-yellow);
+    background-color: var(--back-picProfile);
+    transition: 1s ease-in-out;
 }
 
 .contact{
@@ -323,6 +330,7 @@ body{
     grid-area: aside1;
     padding: 30px 15px;
     color: var(--text-body);
+    transition: 1s ease-in-out;
 }
 
 .description-exp{
@@ -332,6 +340,7 @@ body{
     padding-bottom: 50px;
     line-height: 25px;
     color: var(--text-body);
+    transition: 1s ease-in-out;
     
 }
 
@@ -342,6 +351,7 @@ body{
     padding-bottom: 20px;
     margin-bottom: 50px;
     color: var(--text-body);
+    transition: 1s ease-in-out;
 }
 
 
@@ -354,6 +364,7 @@ body{
     padding-bottom: 10px;
     font-size: 0.87rem;
     color: var(--text-body);
+    transition: 1s ease-in-out;
 }
 
 .year-exp2{
@@ -362,6 +373,7 @@ body{
     font-size: 0.87rem;
     border-bottom: 2px solid gray;  
     color: var(--text-body);
+    transition: 1s ease-in-out;
 }
 
 .year-exp3{
@@ -369,6 +381,7 @@ body{
     padding: 10px 0px;
     font-size: 0.87rem;
     color: var(--text-body);
+    transition: 1s ease-in-out;
 }
 
 .profesion-exp1{
@@ -376,6 +389,7 @@ body{
     font-weight: bold;
     padding-bottom: 20px;
     color: var(--text-body);
+    transition: 1s ease-in-out;
 }
 
 .profesion-exp2{
@@ -384,6 +398,7 @@ body{
     font-weight: bold;
     padding-bottom: 20px;
     color: var(--text-body);
+    transition: 1s ease-in-out;
 }
 
 .profesion-exp3{
@@ -391,6 +406,7 @@ body{
     padding-top: 10px;
     font-weight: bold;
     color: var(--text-body);
+    transition: 1s ease-in-out;
 }
 
 .empresa-exp1{
@@ -398,6 +414,7 @@ body{
     padding-bottom: 10px;
     border-bottom: 2px solid gray; 
     color: var(--text-body);
+    transition: 1s ease-in-out;
 }
 
 .empresa-exp2{
@@ -405,11 +422,13 @@ body{
     padding-bottom: 10px;
     border-bottom: 2px solid gray;
     color: var(--text-body);
+    transition: 1s ease-in-out;
 }
 
 .empresa-exp3{
     grid-area: empresa3; 
     color: var(--text-body);
+    transition: 1s ease-in-out;
 }
 
 /* ---------- CONTENEDOR EXP-TITLE (GRID) ---------- */
@@ -437,6 +456,7 @@ body{
     padding: 0px 15px;
     padding-bottom: 20px;
     color: var(--text-body);
+    transition: 1s ease-in-out;
 }
 
 .contenedor-habilidades-img{
@@ -454,6 +474,7 @@ body{
 .habilidad-name{
     padding-top: 10px;
     color: var(--text-body);
+    transition: 1s ease-in-out;
 }
 
 .habilidad-0{
@@ -498,6 +519,7 @@ body{
     padding-bottom: 3rem;
     font-size: 24px;
     color: var(--text-body);
+    transition: 1s ease-in-out;
     
 }
 
@@ -576,6 +598,7 @@ body{
     font-size: 24px;
     padding: 40px 0px;
     color: var(--text-body);
+    transition: 1s ease-in-out;
 }
 
 .contact-img-social{
@@ -587,11 +610,13 @@ body{
     padding: 5px 0px;
     font-size: 18px;
     color: var(--text-body);
+    transition: 1s ease-in-out;
 }
 
 .contact-subtitle-2{
     font-size: 14px;
     color: var(--text-body);
+    transition: 1s ease-in-out;
 }
 
 .contenedor-contacto{
@@ -609,6 +634,7 @@ body{
     padding: 10px 0px;
     margin-top: 50px;
     color: var(--text-headfooter);
+    transition: 1s ease-in-out;
 }
 
 /* ---------- CONTENEDOR FOOTER (GRID) ---------- */
@@ -726,7 +752,7 @@ body{
 
 /* /-/-/-/-/-/-/-/-/-/-/ GRID PARA DESKTOP /-/-/-/-/-/-/-/-/-/-/ */
 
-@media (min-width: 860px){
+@media (min-width: 930px){
 
 /* ---------- TITULO ANIMADO ---------- */
 
@@ -742,6 +768,7 @@ body{
     padding: 0 50px;
     margin: 0;
     background-color: var(--head-footer);
+    transition: 1s ease-in-out;
     display: flex;
     justify-content: space-between;
     justify-items: center;
@@ -771,6 +798,7 @@ body{
     border-bottom-left-radius: 10px;
     transition: all 1s;
     color: var(--text-headfooter); 
+    transition: 1s ease-in-out;
     border: 1px dashed;
   }
 
@@ -788,6 +816,7 @@ body{
     left: -1px;
     border-top: 5px solid var(--back-yellow);
     border-left: 5px solid var(--back-yellow);
+    transition: 1s ease-in-out;
   }
 
   .list-newmenu:before {
@@ -795,6 +824,7 @@ body{
     right: -1px;
     border-bottom: 5px solid var(--back-yellow);
     border-right: 5px solid var(--back-yellow);
+    transition: 1s ease-in-out;
   }
 
   .list-newmenu:hover {
@@ -858,7 +888,8 @@ body{
     width: 400px;
     height: 400px;
     border-radius: 50%;  
-    background-color: var(--back-yellow);
+    background-color: var(--back-picProfile);
+    transition: 1s ease-in-out;
 }
 
 .personal-pic{
@@ -1004,6 +1035,7 @@ body{
     padding: 10px 0px;
     margin-top: 50px;
     color: var(--text-headfooter);
+    transition: 1s ease-in-out;
 }
 
 .contenedor-contacto{
@@ -1041,9 +1073,6 @@ padding-top: 15px;
 padding-bottom: 30px;
 }
 
-
-
-
 }
 
 @media (min-width: 1090px){
@@ -1054,6 +1083,6 @@ padding-bottom: 30px;
 }
 
 
-/* ---------- FIN ----------*/  
+/* ---------- FIN  CODE----------*/  
 
 

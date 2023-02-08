@@ -1,3 +1,5 @@
+ /*---------- Inicio Code Immer ----------*/
+
 .container-switch {
     width: 100%;
     display: flex;
@@ -15,8 +17,6 @@
     display: flex;
     outline: none;
     align-items: center;
-    
-    
 }
 
 
@@ -54,7 +54,7 @@
 }
 
 
-@media (min-width: 860px){ /* Cambio de codigo para otras pantallas */
+@media (min-width: 930px){ /* Cambio de codigo para otras pantallas */
 
     .container-switch {
 
@@ -64,5 +64,6 @@
 
     }
 
- 
 }
+
+ /*---------- Fin Code Immer ----------*/

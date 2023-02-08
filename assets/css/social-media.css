@@ -9,7 +9,7 @@
     display: flex;
     justify-items: center;
     justify-content: center;
-    padding-top: 280px;
+    padding-top: 280px; /* Original padding-top: 280px; */
 }
 
 .ancorsm {
@@ -116,14 +116,14 @@
 }
 
 
-@media (min-width: 860px){
+@media (min-width: 930px){
 
     .social-media{
         display: flex;
         flex-direction: row;
         justify-items: flex-start;
         justify-content: flex-start;
-        padding-top: 90px;
+        padding-top: 40px; /* Original padding-top: 90px;*/
         
     }
 
