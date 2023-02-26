@@ -27,6 +27,7 @@
     --text-headfooter: hsl(60, 100%, 97%); /* hsl(60, 100%, 97%); */
     --text-body: hsl(0, 0%, 0%); /* hsl(0, 0%, 0%); */
     --hambur-color: hsl(0, 0%, 0%); /* hsl(0, 0%, 0%); */
+    --btn-projects: 
     /*---------- Colores ----------*/
     
 }
@@ -665,6 +666,101 @@ body{
     z-index: 2;
 }
 
+/* Inicio Botones dentro de Figure */
+
+.btn-neon {
+    padding-top: 20px;
+    width: 350px;
+    display: flex;
+    flex: 1 1;
+    justify-content: space-between;
+}
+
+.btn-neon1 {
+    background-color: #1a0321;
+    position: relative;
+    display: flex;
+    padding: 8px 30px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-neon1:hover {
+    background-color: var(--back-switch);
+    /*box-shadow: 0 0 10px #a945c7, 0 0 40px
+    #a945c7, 0 0 80px #a945c7;*/
+    transition-delay: 1s;
+}
+
+.btn-neon1 span {
+    position: absolute;
+    display: block;
+}
+
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent, var(--back-switch));
+}
+
+.btn-neon1:hover #span1 {
+    left: 100%;
+    transition: 1.5s;
+}
+
+#span3 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent, var(--back-switch));
+}
+
+.btn-neon1:hover #span3 {
+    right: 100%;
+    transition: 1.5s;
+    transition-delay: 0.5s;
+    
+}
+
+#span2 {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent, var(--back-switch));
+}
+
+.btn-neon1:hover #span2 {
+    top: 100%;
+    transition: 1.5s;
+    transition-delay: 0.25s;
+}
+
+#span4 {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent, var(--back-switch));
+}
+
+.btn-neon1:hover #span4 {
+    bottom: 100%;
+    transition: 1.5s;
+    transition-delay: 0.75s;
+}
+
+/* Fin Botones dentro de Figure */
 
 .image{
     
