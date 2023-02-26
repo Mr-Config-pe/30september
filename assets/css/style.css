@@ -27,7 +27,7 @@
     --text-headfooter: hsl(60, 100%, 97%); /* hsl(60, 100%, 97%); */
     --text-body: hsl(0, 0%, 0%); /* hsl(0, 0%, 0%); */
     --hambur-color: hsl(0, 0%, 0%); /* hsl(0, 0%, 0%); */
-    --btn-projects: 
+    --btn-projects: hsl(0, 0%, 0%, 0.8); /* hsl(0, 0%, 0%, 0.8);*/
     /*---------- Colores ----------*/
     
 }
@@ -45,6 +45,7 @@ body.dark {
     --text-headfooter: hsl(0, 0%, 100%); /* hsl(60, 100%, 97%); */
     --text-body: hsl(0, 0%, 75%); /* hsl(0, 0%, 0%); */
     --hambur-color: hsl(183, 51%, 61%); /* hsl(183, 51%, 61%); */
+    --btn-projects: hsl(0, 75%, 61%); /* hsl(0, 75%, 61%); */
     /*---------- Colores ----------*/
     
 }
@@ -524,6 +525,14 @@ body{
     
 }
 
+.portafolio-title2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0px;
+    color: var(--text-body);
+}
+
 .container-pages{
     grid-area: container-pages;
 }
@@ -659,6 +668,15 @@ body{
     gap: 2em;
 }
 
+.container2-pages {
+    max-width: 1500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
 .bar-chrome{
     position: relative;
     width: 350px;
@@ -677,7 +695,7 @@ body{
 }
 
 .btn-neon1 {
-    background-color: #1a0321;
+    background-color: var(--btn-projects);
     position: relative;
     display: flex;
     padding: 8px 30px;
@@ -842,6 +860,46 @@ body{
     transform: translateY(-12%);
     filter: none;
 }
+
+/* Inicio Estilo para Mini Pages - FreecodeCamp */
+
+.img2-1 {
+    width: 100%;
+    max-width: auto;
+    transition: 1s;
+    filter:brightness(90%);
+}
+
+.img2-1:hover{
+    transform: translateY(-8%);
+    filter: none;
+}
+
+.img2-2 {
+    width: 100%;
+    max-height: auto;
+    transition: 2s;
+    filter:brightness(90%);
+}
+
+.img2-2:hover{
+    transform: translateY(-5%);
+    filter: none;
+}
+
+.img2-3 {
+    width: 100%;
+    max-width: auto;
+    transition: 1s;
+    filter:brightness(90%);
+}
+
+.img2-3:hover{
+    transform: translateY(-8%);
+    filter: none;
+}
+
+/* Fin Estilo para Mini Pages - FreecodeCamp */
 
 /* ---------- FIN CODE VIEW PAGES ---------- */
 
