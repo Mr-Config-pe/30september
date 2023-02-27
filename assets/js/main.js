@@ -63,3 +63,19 @@ switchButton.addEventListener('click', ()=>{
 })
 
 /* ---------- Fin Code Boton Switch Modo Oscuro ---------- */
+
+/* ---------- Inicio Code Copiar Correo y celular ---------- */
+
+function copyToClipboard1() {
+  let cellPhone = document.querySelector("#cellphone");
+  cellPhone.select();
+  document.execCommand("copy");
+}
+
+function copyToClipboard2() {
+  let email = document.querySelector("#email");
+  email.select();
+  document.execCommand("copy");
+}
+
+/* ---------- Fin Code Copiar Correo y celular ---------- */

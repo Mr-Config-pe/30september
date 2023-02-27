@@ -202,8 +202,24 @@ body{
     text-align: center;
 }
 
+.fa-square-whatsapp {
+    color: grey;
+}
+
+.fa-square-whatsapp:hover {
+    color: var(--back-switch)
+}
+
 .contacto-email{
     text-align: center;  
+}
+
+.fa-envelope {
+    color: grey;
+}
+
+.fa-envelope:hover {
+    color: var(--back-switch)
 }
 
 /* ---------- INICIO GRID AREA (PRINCIPAL) ---------- */
@@ -239,6 +255,37 @@ body{
 .footer{
     grid-area: footer;
     /*background-color: white; Fondo de Footer General*/
+}
+
+.container-footer {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.contacto-cel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#cellphone {
+    height: 20px;
+    padding-left: 5px;
+}
+
+.contacto-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#email {
+    height: 20px;
+    padding-left: 5px;
 }
 
 /* ---------- CONTENEDOR PRINCIPAL (GRID) ---------- */
@@ -606,9 +653,19 @@ body{
     grid-area: footer1;
     text-align: center;
     font-size: 24px;
-    padding: 40px 0px;
+    padding: 10px 20px;
     color: var(--text-body);
     transition: 1s ease-in-out;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+hr {
+    
+    border: none;
+    border-bottom: 1px solid gray;
+    margin: 10px 0;
+      
 }
 
 .contact-img-social{
@@ -617,7 +674,8 @@ body{
 
 .contact-subtitle{
     font-weight: bold;
-    padding: 5px 0px;
+    padding-top: 15px;
+    padding-bottom: 30px;
     font-size: 18px;
     color: var(--text-body);
     transition: 1s ease-in-out;
@@ -629,10 +687,10 @@ body{
     transition: 1s ease-in-out;
 }
 
-.contenedor-contacto{
+.container-contact{
     grid-area: footer2;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     gap: 2rem;
 }
@@ -1215,11 +1273,31 @@ body{
     width: 100px;
 }
 
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.container-contact{
+    grid-area: footer2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
 .contacto-title{
     grid-area: footer1;
     font-size: 24px;
-    padding: 40px 50px;
-
+    padding: 0px 40px;
+    border-bottom: 1px solid gray;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-subtitle{

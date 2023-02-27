@@ -454,31 +454,37 @@
       </div>
     </article>
     <footer id="footer-web" class="footer">
-      <h3 class="contacto-title">CONTACTO</h3>
-      <div class="contenedor-contacto">
-        <div class="contacto-cel">
-          <div class="base-icon-">
-            <a href="https://wa.me/51937790561" target="_blank"
-              ><img
-                src="./assets/img/iconos/whatsapp-icon.png"
-                alt=""
-                class="contact-img-social"
-            /></a>
+      <div class="container-footer">
+        <h3 class="contacto-title">CONTACTO</h3>
+        <div class="container-contact">
+          <div class="contacto-cel">
+            <div class="base-icon-">
+              <a href="https://wa.me/51937790561" target="_blank"
+                ><i class="fa-brands fa-square-whatsapp fa-3x"></i></a>
+            </div>
+            <p class="contact-subtitle">WhatsApp</p>
+            <div>
+              <input type="text" id="cellphone" value="+51 937790561">
+              <button onclick="copyToClipboard1()">
+                <i class="fa-solid fa-copy"></i>
+                <span class="tooltiptext">Copiar</span>
+              </button>
+            </div>
           </div>
-          <p class="contact-subtitle">Numero Celular</p>
-          <p class="contact-subtitle-2">+51 937790561</p>
-        </div>
-        <div class="contacto-email">
-          <div class="base-icon-">
-            <a href="https://www.gmail.com" target="_blank"
-              ><img
-                src="./assets/img/iconos/gmail-icon.png"
-                alt=""
-                class="contact-img-social"
-            /></a>
+          <div class="contacto-email">
+            <div class="base-icon-">
+              <a href="https://www.gmail.com" target="_blank"
+                ><i class="fa-solid fa-envelope fa-3x"></i></a>
+            </div>
+            <p class="contact-subtitle">Email</p>
+            <div>
+              <input type="text" id="email" value="mr.configperu@gmail.com">
+              <button onclick="copyToClipboard2()">
+                <i class="fa-solid fa-copy"></i>
+                <span class="tooltiptext">Copiar</span>
+              </button>
+            </div>
           </div>
-          <p class="contact-subtitle">Email</p>
-          <p class="contact-subtitle-2">mr.configperu@gmail.com</p>
         </div>
       </div>
       <p class="firma-footer">
