@@ -383,14 +383,14 @@ body{
 }
 
 .description-exp{
-    /*background-color: #8E7EBF; Fondo de Trabajo*/
+    /* background-color: #8E7EBF; */
     grid-area: aside2;
     padding: 0px 15px;
     padding-bottom: 50px;
     line-height: 25px;
     color: var(--text-body);
     transition: 1s ease-in-out;
-    
+    margin-right: 70px;
 }
 
 .experiencie-title{
@@ -569,10 +569,21 @@ body{
     font-size: 24px;
     color: var(--text-body);
     transition: 1s ease-in-out;
+    text-align: center;
     
 }
 
 .portafolio-title2 {
+    grid-area: portafolio2;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0px;
+    color: var(--text-body);
+}
+
+.portafolio-title3 {
+    grid-area: portafolio3;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -582,6 +593,14 @@ body{
 
 .container-pages{
     grid-area: container-pages;
+}
+
+.container2-pages{
+    grid-area: container2-pages;
+}
+
+.container3-pages{
+    grid-area: container3-pages;
 }
 
 .porta-img{
@@ -632,24 +651,32 @@ body{
     display: none;
 }
 
-/* ---------- CONTENEDOR ARTICLE (GRID) ---------- */
+/* ---------- CONTENEDOR ARTICLE (GRID) ORDENAR PROYECTOS ---------- */
 
-.article{
-    
+.article {
+
+    /*margin: 0px 120px;*/
+    /* background-color: aqua; */
+    margin-bottom: 35px;
     display: grid;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2.5rem;
-    align-items: center; /*Centra los items manteniendolo mas pequeño*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*top: 0;*/
+    gap: 1rem;
     grid-template-areas:
+    'portafolio3'
+    'container3-pages'
+    'portafolio2'
+    'container2-pages'
     'portafolio'
     'container-pages'
-   ;
+
 }
 
 /* ---------- INICIO GRID AREA FOORTER ---------- */
 
-.contacto-title{
+.contacto-title {
     grid-area: footer1;
     text-align: center;
     font-size: 24px;
@@ -727,6 +754,15 @@ hr {
 }
 
 .container2-pages {
+    max-width: 1500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.container3-pages {
     max-width: 1500px;
     display: flex;
     flex-direction: row;
@@ -958,6 +994,46 @@ hr {
 }
 
 /* Fin Estilo para Mini Pages - FreecodeCamp */
+
+/* Inicio Estilo para Mini Pages - Para Empresas */
+
+.img3-1 {
+    width: 100%;
+    max-width: auto;
+    transition: 3s;
+    filter:brightness(90%);
+}
+
+.img3-1:hover{
+    transform: translateY(-86.6%);
+    filter: none;
+}
+
+.img3-2 {
+    width: 100%;
+    max-height: auto;
+    transition: 2s;
+    filter:brightness(90%);
+}
+
+.img3-2:hover{
+    transform: translateY(-78%);
+    filter: none;
+}
+
+/* .img3-3 {
+    width: 100%;
+    max-width: auto;
+    transition: 1s;
+    filter:brightness(90%);
+}
+
+.img3-3:hover{
+    transform: translateY(-8%);
+    filter: none;
+} */
+
+/* Fin Estilo para Mini Pages - Para Empresas */
 
 /* ---------- FIN CODE VIEW PAGES ---------- */
 
@@ -1198,19 +1274,7 @@ hr {
 
 /* ---------- ZONA ARTICLE ---------- */
 
-.article{
-    /*margin: 0px 120px;*/
-    margin-bottom: 35px;
-    display: grid;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    /*top: 0;*/
-    gap: 1rem;
-    /*grid-template-areas:
-    'article1 article1 article1'
-    'article5 article5 article5';*/
-}
+
 
 .porta-slider{
     width: 100%;
